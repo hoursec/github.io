@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+    $(function(){
+      $("#navbar").load("navbar.html");
+      $("#footer").load("footer.html"); 
+    });
+    </script>
+
+    <script type='text/javascript'>//<![CDATA[
+      $(window).load(function(){
+      $('.dropdown-menu').click(function(e) {
+        e.stopPropagation();
+      });
+      });//]]> 
+    </script>
+
+    <!-- To set the correct width in abstract and bibtex dropdowns -->
+    <script>
+      function getWidth(){
+        var width = document.getElementById("navbar").clientWidth/2 + "px";
+	var widthStr = "width: " + width + ";";
+        var abstracts = document.getElementsByClassName("abstract");
+        var bibtexes = document.getElementsByClassName("bibtex");
+        for(var i = 0; i < abstracts.length; i++){
+          abstracts[i].setAttribute("style", widthStr);
+        }
+
+	for(var i = 0; i < bibtexes.length; i++){
+          bibtexes[i].setAttribute("style", widthStr);
+        }
+      }
+
+      window.onload=function() {
+        getWidth();
+      }
+    </script>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <title>Alexandra Pinto Castellanos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <!-- Custom styles for this page -->
+    <link href="assets/css/publications.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/hover.zoom.js"></script>
+    <script src="assets/js/hover.zoom.conf.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Static navbar -->
+    <div id="navbar"></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="offset1 span8">
+          </br>
+
+<!--------------------------------------->
+<!--           JOURNAL PAPERS          -->
+<!--------------------------------------->
+<h3>Journal Papers</h3>
+  </br>
+  <hr>
+  <!-- ---------NEW ENTRY AFTER THIS LINE---------- -->
+<!-- ---------ENTRY START--------- -->
+                                <!-- Paper information -->
+                                Alexandra Pinto Castellanos <b>(2018)</b> </br> 
+                                <b> Stochastic Resonance in Neural Network, Noise Color Effects</b></br> 
+In <i>adsabs</i> </br> 
+
+<!-- Dropdown Abstract --> 
+                               <div class="dropdown" style="float: left"> 
+                               <a class="btn btn-primary dropdown-toggle rightmargin" data-toggle="dropdown" href="#"> 
+                               Abstract 
+                               <span class="caret"></span> 
+                               </a> 
+                               <div class="abstract dropdown-menu" role="menu" aria-labelledby="dLabel"> 
+                               <i> 
+                               Some systems cannot be predicted by classical theories and require the development of combined deterministic and stochastic theories that make use of noise for their dynamical prediction. Noise is not always an interfering signal which perturbs the system, it can also enhance its performance. This property can be observed through Stochastic Resonance (SR), To detect this phenomena it is necessary a system with bistable potential barrier with a threshold, the input of the system should be a weak periodic signal which amplitude is below threshold together with a stochastic signal. The behaviour of the SR is detected in a neural network and it is studied under noise color variations. Here it is found that Pink noise amplifies the sub-threshold input signal twenty times more in comparison to white noise. This could be evidence of the functionality of background noise in the brain, where neurons are naturally embedded in pink noise.
+                               </i> 
+                               </div> 
+                               </div> 
+
+<!-- Dropdown Bibtex --> 
+                                   <div class="dropdown" style="float: left"> 
+                                   <a class="btn btn-primary dropdown-toggle rightmargin" data-toggle="dropdown" href="#"> 
+                                   BibTeX 
+                                   <span class="caret"></span> 
+                                   </a> 
+                                   <div class="bibtex dropdown-menu" role="menu" aria-labelledby="dLabel">                                   @article{adsabs,
+    abstract = {Some systems cannot be predicted by classical theories and require the development of combined deterministic and stochastic theories that make use of noise for their dynamical prediction. Noise is not always an interfering signal which perturbs the system, it can also enhance its performance. This property can be observed through Stochastic Resonance (SR), To detect this phenomena it is necessary a system with bistable potential barrier with a threshold, the input of the system should be a weak periodic signal which amplitude is below threshold together with a stochastic signal. The behaviour of the SR is detected in a neural network and it is studied under noise color variations. Here it is found that Pink noise amplifies the sub-threshold input signal twenty times more in comparison to white noise. This could be evidence of the functionality of background noise in the brain, where neurons are naturally embedded in pink noise.},
+    author = {Pinto Alexandra},
+    doi = {10.13140/RG.2.2.25576.26887},
+    openaccess = {https://ui.adsabs.harvard.edu/abs/2018arXiv181006731P},
+    pdf = {https://arxiv.org/pdf/1810.06731.pdf},
+    title = {Stochastic Resonance in Neural Network, Noise Color Effects},
+    year = {2018}
+}
+
+
+                                   </div> 
+                                   </div> 
+
+<!-- Download button --> 
+                               <a class="btn btn-primary rightmargin" style="float: left" target="_blank" href="https://arxiv.org/pdf/1810.06731.pdf"> 
+                               Published Version <b>(Open Access)</b> 
+                               </a> 
+
+<!-- Preprint pdf button --> 
+                               <a class="btn btn-primary rightmargin" style="float: left" target="_blank" href="https://arxiv.org/pdf/1810.06731.pdf"> 
+                               PDF <b>(Preprint)</b> 
+                               </a> 
+
+</br></br>
+<hr>
+<!-- ---------ENTRY END--------- -->
+<!-- ---------ENTRY START--------- -->
+                                <!-- Paper information -->
+                                Alexandra Pinto Castellanos <b>(2018)</b> </br> 
+                                <b>Simulation and experimental verification of the DNA damage due to X-rays interaction</b></br> 
+In <i>physics.med-ph</i> </br> 
+
+<!-- Dropdown Abstract --> 
+                               <div class="dropdown" style="float: left"> 
+                               <a class="btn btn-primary dropdown-toggle rightmargin" data-toggle="dropdown" href="#"> 
+                               Abstract 
+                               <span class="caret"></span> 
+                               </a> 
+                               <div class="abstract dropdown-menu" role="menu" aria-labelledby="dLabel"> 
+                               <i> 
+                               This paper describes the model for DNA in MATLAB taking into account all of component atoms. In this model, it is possible to 
+				       generate sequences with length 10000 basis pairs available for introducing all types of sequences. Once the strands are 
+				       generated, it is studied the DNA damage in the single strand and double strand. The damage are outcomes of ionising 
+				       radiation of X-rays when interacting with the DNA immersed in water. This is a theoretical and experimental in-vitro 
+				       study that quantifies the single strand and double strand damage for different doses of radiation. This can be useful to 
+				       predict the exact risks of expositions to radiations. In simulations, it is taken into account the damage caused by free 
+				       electrons generated by the effect of the interaction with the water molecules, this is different to the effect considered 
+				       in radiobiology, where indirect damages are due to chemical reactions. The spatial distribution of the electrons is 
+				       obtained from Geant4 and here this distribution is used for the creation of rays as three-dimensional random trajectories 
+				       through Monte Carlo simulations. It is also presented the experimental DNA damage through radiating DNA samples immersed 
+				       in water with a X-rays unit with Molybdenum target. The damage level is quantified through Atomic Force Microscopy (AFM). 
+				       It is possible to conclude a direct relation between the damage and the radiation doses with the experimental results.
+                               </i> 
+                               </div> 
+                               </div> 
+
+<!-- Dropdown Bibtex --> 
+                                   <div class="dropdown" style="float: left"> 
+                                   <a class="btn btn-primary dropdown-toggle rightmargin" data-toggle="dropdown" href="#"> 
+                                   BibTeX 
+                                   <span class="caret"></span> 
+                                   </a> 
+                                   <div class="bibtex dropdown-menu" role="menu" aria-labelledby="dLabel">                                   @article{physics.med-ph,
+    abstract = {This paper describes the model for DNA in MATLAB taking into account all of component atoms. In this model, it is possible to generate sequences 
+					   with length 10000 basis pairs available for introducing all types of sequences. Once the strands are generated, it is 
+					   studied the DNA damage in the single strand and double strand. The damage are outcomes of ionising radiation of X-rays
+					   when interacting with the DNA immersed in water. This is a theoretical and experimental in-vitro study that quantifies
+					   the single strand and double strand damage for different doses of radiation. This can be useful to predict the exact 
+					   risks of expositions to radiations. In simulations, it is taken into account the damage caused by free electrons 
+					   generated by the effect of the interaction with the water molecules, this is different to the effect considered in 
+					   radiobiology, where indirect damages are due to chemical reactions. The spatial distribution of the electrons is 
+					   obtained from Geant4 and here this distribution is used for the creation of rays as three-dimensional random 
+					   trajectories through Monte Carlo simulations. It is also presented the experimental DNA damage through radiating DNA 
+					   samples immersed in water with a X-rays unit with Molybdenum target. The damage level is quantified through Atomic 
+					   Force Microscopy (AFM). It is possible to conclude a direct relation between the damage and the radiation doses with 
+					   the experimental results.},
+    author = {Pinto Alexandra},
+    doi = {10.13140/RG.2.2.25576.26887},
+    openaccess = {arXiv:1810.05815},
+    pdf = {https://ui.adsabs.harvard.edu/abs/2018arXiv181005815P},
+    title = {Simulation and experimental verification of the DNA damage due to X-rays interaction},
+    year = {2018}
+}
+
+
+                                   </div> 
+                                   </div> 
+
+<!-- Download button --> 
+                               <a class="btn btn-primary rightmargin" style="float: left" target="_blank" href="https://arxiv.org/pdf/1810.05815.pdf"> 
+                               Published Version <b>(Open Access)</b> 
+                               </a> 
+
+<!-- Preprint pdf button --> 
+                               <a class="btn btn-primary rightmargin" style="float: left" target="_blank" href="https://arxiv.org/pdf/1810.05815.pdf"> 
+                               PDF <b>(Preprint)</b> 
+                               </a> 
+
+</br></br>
+<hr>
+
+
+<!-- ---------ENTRY END--------- -->
+<!-- ---------ENTRY START--------- -->
+                                <!-- Paper information -->
+                                Alexandra Pinto Castellanos <b>(2017)</b> </br> 
+                                <b>Coupled Oscillators as a model of Olfactory Network. Importance in Pattern Recognition and Classification tasks</b></br> 
+In <i>adsabs</i> </br> 
+
+<!-- Dropdown Abstract --> 
+                               <div class="dropdown" style="float: left"> 
+                               <a class="btn btn-primary dropdown-toggle rightmargin" data-toggle="dropdown" href="#"> 
+                               Abstract 
+                               <span class="caret"></span> 
+                               </a> 
+                               <div class="abstract dropdown-menu" role="menu" aria-labelledby="dLabel"> 
+                               <i> 
+                               The olfactory system is constantly solving pattern-recognition problems by the creation of a large space to codify odour 
+				       representations and optimizing their distribution within it. A model of the Olfactory Bulb was developed by Z. Li and 
+				       J. J. Hopfield Li and Hopfield (1989) based on anatomy and electrophysiology. They used nonlinear simulations observing 
+				       that the collective behavior produce an oscillatory frequency. Here, we show that the Subthreshold hopf bifurcation is a 
+				       good candidate for modeling the bulb and the Subthreshold subcritical hopf bifurcation is a good candidate for modeling 
+				       the olfactory cortex. Network topology analysis of the subcritical regime is presented as a proof of the importance of 
+				       synapse plasticity for memory functions in the olfactory cortex.
+                               </i> 
+                               </div> 
+                               </div> 
+
+<!-- Dropdown Bibtex --> 
+                                   <div class="dropdown" style="float: left"> 
+                                   <a class="btn btn-primary dropdown-toggle rightmargin" data-toggle="dropdown" href="#"> 
+                                   BibTeX 
+                                   <span class="caret"></span> 
+                                   </a> 
+                                   <div class="bibtex dropdown-menu" role="menu" aria-labelledby="dLabel">                                   @article{adsabs,
+    abstract = {The olfactory system is constantly solving pattern-recognition problems by the creation of a large space to codify odour representations and 
+					   optimizing their distribution within it. A model of the Olfactory Bulb was developed by Z. Li and J. J. Hopfield Li 
+					   and Hopfield (1989) based on anatomy and electrophysiology. They used nonlinear simulations observing that the 
+					   collective behavior produce an oscillatory frequency. Here, we show that the Subthreshold hopf bifurcation is a good 
+					   candidate for modeling the bulb and the Subthreshold subcritical hopf bifurcation is a good candidate for modeling 
+					   the olfactory cortex. Network topology analysis of the subcritical regime is presented as a proof of the importance 
+					   of synapse plasticity for memory functions in the olfactory cortex.},
+    author = {Pinto Alexandra},
+    doi = {10.13140/RG.2.2.25576.26887},
+    openaccess = {arXiv:1905.06307},
+    pdf = {https://ui.adsabs.harvard.edu/abs/2019arXiv190506307P},
+    title = {Coupled Oscillators as a model of Olfactory Network. Importance in Pattern Recognition and Classification tasks},
+    year = {2017}
+}
+
+
+                                   </div> 
+                                   </div> 
+
+<!-- Download button --> 
+                               <a class="btn btn-primary rightmargin" style="float: left" target="_blank" href="https://arxiv.org/pdf/1905.06307.pdf"> 
+                               Published Version <b>(Open Access)</b> 
+                               </a> 
+
+<!-- Preprint pdf button --> 
+                               <a class="btn btn-primary rightmargin" style="float: left" target="_blank" href="https://arxiv.org/pdf/1905.06307.pdf"> 
+                               PDF <b>(Preprint)</b> 
+                               </a> 
+
+</br></br>
+<hr>
+<!-- ---------ENTRY END--------- -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+    </div>
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
