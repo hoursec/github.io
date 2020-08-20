@@ -26,6 +26,36 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
+	  
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+<body>
+<h2>Math in TeX notation</h2>
+
+When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+$$ \begin{array}{rcll}
+y & = & x^{2}+bx+c\\
+  & = & x^{2}+2\times\dfrac{b}{2}x+c\\
+  & = & \underbrace{x^{2}+2\times\dfrac{b}{2}x+\left(\frac{b}{2}\right)^{2}}-
+      {\left(\dfrac{b}{2}\right)^{2}+c}\\
+  &  & \qquad\left(x+{\dfrac{b}{2}}\right)^{2}\\
+  & = & \left(x+\dfrac{b}{2}\right)^{2}-\left(\dfrac{b}{2}\right)^{2}+c 
+  & \left|+\left({\dfrac{b}{2}}\right)^{2}-c\right.\\
+    y+\left(\dfrac{b}{2}\right)^{2}-c & = & \left(x+
+    \dfrac{b}{2}\right)^{2} & \left|\strut(\textrm{vertex form})\right.\\
+y-y_{S} & = & (x-x_{S})^{2}\\
+S(x_{S};y_{S}) & \,\textrm{or}\, 
+    & S\left(-\dfrac{b}{2};\,\left(\dfrac{b}{2}\right)^{2}-c\right)
+\end{array} $$
+
+<h2>Math in MathML notation</h2>
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/hover.zoom.js"></script>
@@ -47,8 +77,8 @@
         <div class="row">
            <div class="col-lg-8 col-lg-offset-2 centered">
              <img class="img-rounded" src="assets/img/me.png" alt="Hoursec" height="271" width="240">
-             <h1>Enhancing Computing</h1>
-             <h2>Zürich</h2>
+             <h1>Hours</h1>
+             <h2>Enhancing Computing</h2>
            </div><!-- /col-lg-8 -->
          </div><!-- /row -->
        </div> <!-- /container -->
@@ -59,13 +89,14 @@
              <div class="col-lg-3" style="display:inline-block;float:none;vertical-align:top;">
                 <span class="glyphicon glyphicon-education"></span>
 	        <p align="justify">
-                  Hours technology reduces in 3000 % the energy requirements per operation, which translates in data savings. 
-		Hours Brain inspired approach towards synapses as sampling devices allow us to MAXIMIZE the ratio of information transmitted.</p>
+                  Hours technology reduces in 3000 percent the energy requirements per computational operation, which translates in storage and requirements
+			data savings. Hours Brain inspired approach towards synapses as sampling devices allow us to MAXIMIZE the ratio of information 
+			transmitted.</p>
              </div>
              <div class="col-lg-3" style="display:inline-block;float:none;vertical-align:top;">
                  <span class="glyphicon glyphicon-book"></span>
                  <p align="justify">
-                   Since AI = Energy, Hours reduces CO2 with smarter AI. Our Brain inspired Machine Learning that protects data privacy by computing 
+                   Since AI = Energy, Hours reduces $CO_2$ with smarter AI. Our Brain inspired Machine Learning that protects data privacy by computing 
 			 ONLY the subtleties that personalize us while reducing the amount of data required.<br/> 
                    A set of Hours' projects can be found at <a href="./publications.html">publications page</a></p>
              </div>
