@@ -1,0 +1,98 @@
+<!--Section: Contact v.2-->
+<section id="contactForm">
+  <div class="container">
+    <div class="col-lg-8 col-lg-offset-2 text-center">
+      <h2 class="section-heading">Contact us</h2>
+      <hr class="primary">
+      <p>Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+      </div>
+
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row text-center">
+
+                    <!--Grid column-->
+                    <div class="col-md-4 col-md-offset-2">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-4">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row text-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row text-center">
+
+                    <!--Grid column-->
+                    <div class="col-md-8 col-md-offset-2">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary btn-xl" onclick="validateForm();">Send</a>
+                <script>
+                  document.getElementById('status').innerHTML = "Sending...";
+                  formData = {
+                  'name'     : $('input[name=name]').val(),
+                  'email'    : $('input[name=email]').val(),
+                  'subject'  : $('input[name=subject]').val(),
+                  'message'  : $('textarea[name=message]').val()
+                  };
+
+
+                  $.ajax({
+                  url : "mail.php",
+                  type: "POST",
+                  data : formData,
+                  success: function(data, textStatus, jqXHR)
+                  {
+
+                  $('#status').text(data.message);
+                  if (data.code) //If mail was sent successfully, reset the form.
+                  $('#contact-form').closest('form').find("input[type=text], textarea").val("");
+                  },
+                  error: function (jqXHR, textStatus, errorThrown)
+                  {
+                  $('#status').text(jqXHR);
+                  }
+                  });
+                </script>
+            </div>
+            <div class="status"></div>
+    </div>
+</section>
+<!--Section: Contact v.2-->
