@@ -348,3 +348,9 @@ footer {
   display: block;
   max-width: 850px;
   margin: 0 auto; }
+
+.modal-title {
+  color: #000000; }
+
+.modal-dialog {
+  width: 800px; }
